@@ -168,23 +168,23 @@ In particular, the points returned by the latter
 should satisfy the following:
 
 
- -     They are unique (a ray might intersect more
-       than one surface that defines a region, e.g,
-       if the ray is along the $x$-axis and the 
-       region is bounded by the planes $y = \pm x$,
-       then the point $(0, 0)$ could be included
-       twice.)
- -     They include points only along forward of
-       the ray origin. For example, if a region
-       is bounded by the unit circle centered
-       at the origin, then a ray centered at the 
-       origin in the positive $x$ direction 
-       would intersect the region at  $(1,0)$
-       but not $(-1, 0)$.
- -     They are ordered by increasing distance
-       from the ray's origin, i.e., the first 
-       point is the first one encountered by
-       the ray.
+ - They are unique (a ray might intersect more than one surface that 
+   defines a region, e.g,
+   if the ray is along the $x$-axis and the 
+   region is bounded by the planes $y = \pm x$,
+   then the point $(0, 0)$ could be included
+   twice.)
+ - They include points only along forward of
+   the ray origin. For example, if a region
+   is bounded by the unit circle centered
+   at the origin, then a ray centered at the 
+   origin in the positive $x$ direction 
+   would intersect the region at  $(1,0)$
+   but not $(-1, 0)$.
+ - They are ordered by increasing distance
+   from the ray's origin, i.e., the first 
+   point is the first one encountered by
+   the ray.
 
 
 
