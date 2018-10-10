@@ -1,4 +1,4 @@
-# ME 701 - Homework 5
+# ME 701 - Homework 6
 
 This homework focuses on the development of a
 simple 2-D constructive solid geometry module.  I have provided you
