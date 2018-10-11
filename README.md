@@ -101,8 +101,8 @@ the  `Operator` class represents a generic combination
 of two nodes.  Like `Node`,  `Operator` is an abstract
 class because its `contains` method is 
 not (and should not) be implemented.  Its other 
-method `intersections` should be defined,
-however, and that's for you to do.
+method `intersections` is defined.  Look carefully at how
+it combines intersections with its `L` and `R` nodes.
 
 In addition,  you should create the following two specializations
 of the `Operator` class:
