@@ -10,7 +10,9 @@ the best way to avoid bugs (in the present and in the future).
 
 """
 
-from csg import *
+from csg_template import Point, Ray, QuadraticSurface, Primitive, \
+                         Intersection, Union, \
+                         Region, Circle, PlaneV, PlaneH
 import unittest
 import numpy as np
 

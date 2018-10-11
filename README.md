@@ -44,46 +44,6 @@ Point(x=2.000000, y=4.000000)
 **Deliverables**: modify the basic `Point` class to handle (1) addition of
 two points and (2) scaling of a point by a scalar value.
 
-## Problem 2
-
-The template code includes definitions for 
-an abstract `Node` class, from which 
-the `Primitive` and `Operator` classes 
-are derived.  Recall that an abstract class 
-is one that defines a method signature but 
-does not provide an implementation.  In 
-C-speak, it's like having a function declaration
-in a header without its definition in
-the source file.  A `concrete` class inherits
-from a `base` class and provides an 
-implementation of the methods.
-
-
-The `Primitive` class is a concrete class that represents
-terminal node, i.e., a surface.  On the other hand,
-the  `Operator` class represents a generic combination
-of two nodes.  Like `Node`,  `Operator` is an abstract
-class because its `contains` method is 
-not (and should not) be implemented.  Its other 
-method `intersections` should be defined,
-however, and that's for you to do. \\
-
-In addition,  you should create the following two specializations
-of the `Operator` class:
-
-   - `class Union`, whose method `contains(p)`
-      should return `True` if the point is in either 
-      its left or right nodes.
-   - `class Intersection`, whose `contains(p)`
-      should return `True` if the point is in both 
-      its left and right nodes.
-
-**Deliverables**:
-
-  - Implement `Operator.intersections(r)`
-  - Define `class Union` and implement `Union.contains(p)`
-  - Define `class Intersection` and implement `Intersection.contains(p)`
-
 ## Problem 3 -- Kids Love Shapes
 
 The template code provides partial definitions for 
@@ -118,6 +78,48 @@ $f(x, y) = Ax^2 + By^2 + Cxy + Dx + Ey + F$.
  - Implement `PlaneH`
  - Implement `Plane`
  - Implement `Circle`
+
+
+## Problem 3
+
+The template code includes definitions for 
+an abstract `Node` class, from which 
+the `Primitive` and `Operator` classes 
+are derived.  Recall that an abstract class 
+is one that defines a method signature but 
+does not provide an implementation.  In 
+C-speak, it's like having a function declaration
+in a header without its definition in
+the source file.  A `concrete` class inherits
+from a `base` class and provides an 
+implementation of the methods.
+
+
+The `Primitive` class is a concrete class that represents
+terminal node, i.e., a surface.  On the other hand,
+the  `Operator` class represents a generic combination
+of two nodes.  Like `Node`,  `Operator` is an abstract
+class because its `contains` method is 
+not (and should not) be implemented.  Its other 
+method `intersections` should be defined,
+however, and that's for you to do.
+
+In addition,  you should create the following two specializations
+of the `Operator` class:
+
+   - `class Union`, whose method `contains(p)`
+      should return `True` if the point is in either 
+      its left or right nodes.
+   - `class Intersection`, whose `contains(p)`
+      should return `True` if the point is in both 
+      its left and right nodes.
+
+**Deliverables**:
+
+  - Implement `Operator.intersections(r)`
+  - Define `class Union` and implement `Union.contains(p)`
+  - Define `class Intersection` and implement `Intersection.contains(p)`
+
 
 ## Problem 4 -- Regions and Geometry
 
