@@ -96,6 +96,9 @@ class QuadraticSurface(Surface):
     def f(self, p):
         pass
         
+class Plane:
+    pass
+
 class PlaneV:
     pass
 
