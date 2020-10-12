@@ -18,3 +18,9 @@ following features:
     saves the `x` and `f(x)` data to file as two columns.
   - (BONUS) use Matplotlib to embed a plot in your GUI that plots
     $f(x)$ versus $x$ every time the output is calculated.
+
+
+An example (including the embedded plot) is shown below:
+
+<img src="screenshot.jpg" alt="example gui"
+    	title="Example GUI" width="300" height="400" />
