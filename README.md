@@ -22,5 +22,5 @@ following features:
 
 An example (including the embedded plot) is shown below:
 
-<img src="screenshot.jpg" alt="example gui"
-    	title="Example GUI" width="300" height="400" />
+<img src="screenshot.png" alt="example gui"
+    	title="Example GUI" width="400" height="400" />
