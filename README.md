@@ -1,26 +1,44 @@
 # ME 701 - Homework 6
 
-For this homework, you will work individually to complete the GUI developed
-in class.  Your job is to create a *function evaluator* that has the
-following features:
+For this homework, you will work individually to build 
+a GUI application for the guess-a-number game.  This
+game proceeds as follows:
 
-  - Three editable text boxes.   The first is for input of `x` values,
-    the second is for the input of a function (e.g., `np.sin` and
-    `lambda x: x**3`).  The final box, when return is pressed, is updated
-    to show the numerical value of the function given the values of `x`.
- -  Ensure that `x` can be a single number, a sequence of numbers,
-    or a NumPy expression.  In other words, the following should all be
-    valid values in your first box:
-      * `1.23`
-      * `0, 1, 2, 3`
-      * `np.linspace(0, 1, 4)`
-  - Add a `save as` feature that
-    saves the `x` and `f(x)` data to file as two columns.
-  - (BONUS) use Matplotlib to embed a plot in your GUI that plots
-    $f(x)$ versus $x$ every time the output is calculated.
+  1. The computer generates a random integer from zero up to 
+     but not including 10000, i.e., a four-digit integer.
+     Initially, the number is shown to the user as four X's, 
+     i.e., `XXXX`.  Here, `X` means the digit is not yet known.
+
+  2. At each turn, the user selects (a) which digit to guess and 
+     (b) the value of that digit.  If the guess is right, 
+    the appropriate `X` is changed to the number.  For example, 
+    if the second digit was guessed correctly to be 3, the 
+    displayed number should become `X3XX`.
+
+  3. The user gets 10 (or some possibly definable) turns.  The user
+     should be told how many turns remain.  
+
+  4.  If all four digits are guessed in 10 or fewer turns,
+     the user wins.
 
 
-An example (including the embedded plot) is shown below:
+## Deliverables
 
-<img src="screenshot.png" alt="example gui"
-    	title="Example GUI" width="400" height="400" />
+  - Digitize your GUI layout add to this repository as `layout.png`.
+
+  - Using any tools at your disposal, implement the interface to be as close 
+    to your planned layout as possible.
+
+  - Your GUI should be playable by executing `python guess_the_number.py`.
+
+## Bonus
+
+  - +1 if you add in a helper "hint" after each wrong turn.   One
+    possibility is to randomly select an unknown digit and same something
+    about it.  For example, if the number is 3412 and the user guesses wrong
+    and sees 3XX2, you could select the 4 and tell the user the digit is
+    even or it's less than 5, etc. 
+
+  - +1 if you can determine what number of turns leads to a user winning
+    50% of the time on the average.  This is not a GUI question, but it's 
+    an interesting one.  Confirm your result through simulation!
