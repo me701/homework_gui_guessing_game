@@ -1,4 +1,4 @@
-# ME 701 - Homework 6
+# ME 701 - Homework - Guess The Number
 
 For this homework, you will work individually to build 
 a GUI application for the guess-a-number game.  This
@@ -12,10 +12,10 @@ game proceeds as follows:
   2. At each turn, the user selects (a) which digit to guess and 
      (b) the value of that digit.  If the guess is right, 
     the appropriate `X` is changed to the number.  For example, 
-    if the second digit was guessed correctly to be 3, the 
-    displayed number should become `X3XX`.
+    if digit 0 was guessed correctly to be 3, the 
+    displayed number should become `3XXX`.
 
-  3. The user gets 10 (or some possibly definable) turns.  The user
+  3. The user gets 10 (or some possibly definable number of) turns.  The user
      should be told how many turns remain.  
 
   4.  If all four digits are guessed in 10 or fewer turns,
@@ -33,12 +33,12 @@ game proceeds as follows:
 
 ## Bonus
 
-  - +1 if you add in a helper "hint" after each wrong turn.   One
-    possibility is to randomly select an unknown digit and same something
+  - +1/2 if you add in a helper "hint" after each wrong turn.   One
+    possibility is to randomly select an unknown digit and to say something
     about it.  For example, if the number is 3412 and the user guesses wrong
     and sees 3XX2, you could select the 4 and tell the user the digit is
     even or it's less than 5, etc. 
 
-  - +1 if you can determine what number of turns leads to a user winning
+  - +1/2 if you can determine what number of turns leads to a user winning
     50% of the time on the average.  This is not a GUI question, but it's 
-    an interesting one.  Confirm your result through simulation!
+    an interesting one.  You must confirm your result through simulation!
